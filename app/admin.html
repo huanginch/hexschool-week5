@@ -13,7 +13,7 @@ current: admin
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#addAdmin">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#addAdmin" class="text-decoration-none">
                 <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="text-success">
                     <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
                 </svg>
@@ -41,7 +41,12 @@ current: admin
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
+                    <th scope="col">
+                        ID
+                        <svg style="width:12px;height:12px" viewBox="0 0 24 24" class="text-success">
+                            <path fill="currentColor" d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+                        </svg>
+                    </th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Verified</th>
@@ -258,17 +263,17 @@ current: admin
         <nav aria-label="Page navigation ms-auto">
             <ul class="pagination">
                 <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link border-success" href="#">
                         <svg style="width:24px;height:20px;" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
                         </svg>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link bg-success text-light" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link bg-success text-light border-success" href="#">1</a></li>
+                <li class="page-item"><a class="page-link border-success" href="#">2</a></li>
+                <li class="page-item"><a class="page-link border-success" href="#">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">
+                    <a class="page-link border-success" href="#">
                         <svg style="width:24px;height:20px" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                         </svg>
@@ -299,15 +304,15 @@ current: admin
                 </div>
                     <div class="accordion accordion-flush" id="accordionExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" data-bs-parent="#accordionExample" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
+                                    data-bs-target="#collapseOne" data-bs-parent="#accordionExample" aria-expanded="true"
+                                    aria-controls="collapseOne">
                                     <code class="bg-light text-dark p-1">Verified</code>
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <a type="button" class="btn btn-outline-danger me-3">Deactive</a>
                                     <a type="button" class="btn btn-success" data-bs-toggle="card" data-bs-target="#replySlot">Edit</a>
@@ -351,7 +356,7 @@ current: admin
                     </div>
                     <span class="fs-7">2020/4/12</span>
                 </div>
-                <input type="mail" class="w-100 p-3 text-center text-gray-400 border border-gray-400" placeholder="Send Verification Mail">
+                <input type="mail" class="w-100 p-3 text-center border border-gray-400" placeholder="Send Verification Mail">
                 <hr>
                 <h5 class="fw-bold">Access Level</h5>
                 <div class="dropdown">
