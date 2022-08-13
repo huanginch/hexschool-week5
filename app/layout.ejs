@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav flex-column bg-light" style="height: 100%;">
+            <li>
+              <img src="./assets/images/logo-ANSWER.svg" alt="logo" class="my-4 ps-4">
+            </li>
+            <li class="nav-item border-start border-4 border-light">
+              <a href="#" class="d-flex text-decoration-none ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9 17H7V10H9V17M13 17H11V7H13V17M17 17H15V13H17V17Z" />
+                </svg>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item border-start border-4 border-light">
+              <a href="#" class="d-flex text-decoration-none ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" />
+                </svg>
+                Question
+              </a>
+            </li>
+            <li class="nav-item border-start border-4 border-success">
+              <a href="./index.html" class="text-success d-flex align-items-center text-decoration-none  ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M17,9H7V7H17M17,13H7V11H17M14,17H7V15H14M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z" />
+                </svg>
+                Assignment
+              </a>
+            </li>
+            <li class="nav-item border-start border-4 border-light">
+              <a href="#" class="d-flex text-decoration-none ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M4,2H14V4H4V14H2V4C2,2.89 2.89,2 4,2M8,6H18V8H8V18H6V8C6,6.89 6.89,6 8,6M12,10H20C21.11,10 22,10.89 22,12V20C22,21.11 21.11,22 20,22H12C10.89,22 10,21.11 10,20V12C10,10.89 10.89,10 12,10M14,12V20L20,16L14,12Z" />
+                </svg>
+                Course
+              </a>
+            </li>
+            <li class="nav-item border-start border-4 border-light">
+              <a href="./admin.html" class="d-flex text-decoration-none ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M16 17V19H2V17S2 13 9 13 16 17 16 17M12.5 7.5A3.5 3.5 0 1 0 9 11A3.5 3.5 0 0 0 12.5 7.5M15.94 13A5.32 5.32 0 0 1 18 17V19H22V17S22 13.37 15.94 13M15 4A3.39 3.39 0 0 0 13.07 4.59A5 5 0 0 1 13.07 10.41A3.39 3.39 0 0 0 15 11A3.5 3.5 0 0 0 15 4Z" />
+                </svg>
+                Admin
+              </a>
+            </li>
+            <li class="nav-item border-start border-4 border-light">
+              <a href="#" class="d-flex align-items-center text-decoration-none ps-4 py-2">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="me-3">
+                  <path fill="currentColor"
+                    d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+                </svg>
+                Settings
+              </a>
+            </li>
+            <li  class="d-flex align-items-center ps-3 mt-auto mb-4">
+              <img src="./assets/images/andychen.jpeg" alt="andychen" class="rounded-circle me-3 flex-shrink-0" style="width: 3rem; height: 3rem;">
+              <div class="info">
+                <span class="fw-bold">Andy Chen</span>
+                <span>andy0401@mail.com</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <%- contents %>
+        </div>
+      </div>
+    </div>
+    
+  
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
